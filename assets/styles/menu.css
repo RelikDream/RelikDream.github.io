@@ -1,0 +1,55 @@
+.main > ul.menu {
+    background-color: white;
+    flex: 0 0 537px;
+    height: 537px;
+    width: 537px;
+    border: solid 8px black;
+    padding: 36px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+ul.menu {
+    list-style: none;
+}
+
+ul.menu a {
+    color: black;
+    text-decoration: none;
+
+}
+
+ul.menu a {
+    position: relative;
+    z-index: 1;
+}
+
+ul.menu a:hover:before {
+    content: " ";
+    background-image: url("../image/hover-link-background.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80px 80px;
+    position: absolute;
+    right: calc(50% - 40px);
+    z-index: -1;
+    width: 80px;
+    height: 80px;
+    overflow: visible;
+}
+
+ul.menu > li {
+    font-size: 41px;
+    font-weight: bold;
+    margin: 50px 0;
+    text-align: center;
+}
+
+ul.menu.contact {
+    list-style: none;
+}
+
+ul.menu.contact > li {
+    display: inline-block;
+    margin: 0;
+}

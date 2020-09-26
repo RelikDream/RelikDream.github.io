@@ -1,60 +1,24 @@
-@font-face {
-    font-family: 'Oswald';
-    src: url('../font/Oswald-Regular.woff2') format('woff2'),
-    url('../font/Oswald-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+@import "fonts.css";
+@import "vimeo.css";
+@import "spotify.css";
+@import "menu.css";
+/*#FCEA10*/
+
+body {
+    margin: 0;
+    height: 100vh;
 }
-body{
-    margin:0;
-}
-*{
+
+:root {
     box-sizing: border-box;
-    font-family: 'Oswald';
+    font-family: 'Oswald', sans-serif;
 }
-.spotify{
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width:300px;
-    height:80px;
+
+
+main.main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.vimeo-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-bottom: 0;
-    right: 0;
-    z-index: -1;
-    pointer-events: none;
-    overflow: hidden;
-}
-.vimeo-wrapper iframe {
-    width: 100vw;
-    height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
-    min-height: 100vh;
-    min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.body{
-    background-color:white;
-    margin:10vh 50vh;
-    height:80vh;
-    border:solid 4px black;
-    padding: 16px;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
-.body ul.menu{
-    list-style: none;
-}
-.body ul.menu>li{
-    font-size:64px;
-    font-weight:bold;
-    margin: 16px 0;
-    text-align: center;
-}
+
