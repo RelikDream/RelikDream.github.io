@@ -1,0 +1,14 @@
+.small-container {
+    background-color: white;
+    flex: 0 0 537px;
+    height: 537px;
+    width: 537px;
+    border: solid 8px black;
+    padding: 36px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

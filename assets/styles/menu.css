@@ -1,16 +1,8 @@
-.main > ul.menu {
-    background-color: white;
-    flex: 0 0 537px;
-    height: 537px;
-    width: 537px;
-    border: solid 8px black;
-    padding: 36px;
-    overflow-y: auto;
-    overflow-x: hidden;
-}
 
 ul.menu {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 ul.menu a {
