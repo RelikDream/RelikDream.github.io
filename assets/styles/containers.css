@@ -1,14 +1,39 @@
-.small-container {
+.small-container, .large-container {
     background-color: white;
-    flex: 0 0 537px;
     height: 537px;
-    width: 537px;
-    border: solid 8px black;
     padding: 36px;
+}
+.small-container{
+    flex: 0 0 537px;
+    width: 537px;
     overflow-y: auto;
     overflow-x: hidden;
+}
+nav.small-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.small-container > p {
+    flex: 0;
+}
+
+.large-container{
+    width: 1074px;
+    flex: 0 0 1074px;
+    position: relative;
+}
+.large-container> h1{
+    text-transform: uppercase;
+    color:#FCEA10;
+    position: absolute;
+    font-size: 164px;
+    line-height: 1em;
+    text-align: center;
+    margin:0;
+    top: -87px;
+    left: 50%;
+    vertical-align: center;
+    transform: translateX(-50%);
 }
