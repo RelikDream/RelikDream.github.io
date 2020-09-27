@@ -26,6 +26,7 @@ nav.small-container {
     width: 1074px;
     flex: 0 0 1074px;
     position: fixed;
+    padding-top:100px
 }
 
 .large-container > h1 {
