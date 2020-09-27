@@ -1,0 +1,11 @@
+.carousel > .img {
+    width: 300px;
+    height: 400px;
+    background-color: #4d800f;
+    display: inline-block;
+}
+
+.img:target {
+    background-color: #800f7e;
+    transform: scale(1.2);
+}

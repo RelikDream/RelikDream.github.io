@@ -1,5 +1,6 @@
 @import "fonts.css";
 @import "icons.css";
+@import "carousel.css";
 @import "containers.css";
 @import "vimeo.css";
 @import "spotify.css";
@@ -9,6 +10,7 @@
 body {
     margin: 0;
     height: 100vh;
+    background-color: black;
 }
 
 :root {
