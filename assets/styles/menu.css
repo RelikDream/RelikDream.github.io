@@ -16,7 +16,7 @@ ul.menu a {
     z-index: 1;
 }
 
-ul.menu a:hover:before {
+ul.menu a:hover:before, ul.menu a:active:before, ul.menu a:focus:before {
     content: " ";
     background-image: url("../image/hover-link-background.svg");
     background-repeat: no-repeat;
@@ -28,6 +28,10 @@ ul.menu a:hover:before {
     width: 80px;
     height: 80px;
     overflow: visible;
+}
+
+ul.menu a:focus {
+    outline: none
 }
 
 ul.menu > li {
